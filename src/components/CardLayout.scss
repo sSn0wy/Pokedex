@@ -1,0 +1,29 @@
+.card-list {
+	display: flex;
+	padding: 3rem;
+	overflow-x: scroll;
+	scroll-behavior: smooth;
+
+	&::-webkit-scrollbar {
+		height: 10px;
+		width: 4px;
+		background: #17141d;
+	}
+
+	&::-webkit-scrollbar-thumb:horizontal {
+		background: #fff;
+		border-radius: 10px;
+	}
+}
+
+.btn-scroll {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.scrollbar-container {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
