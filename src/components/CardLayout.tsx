@@ -8,12 +8,12 @@ interface Props {
 function CardLayout({ children }: Props) {
 	function scrollRight() {
 		const cards = document.querySelector('#cards');
-		cards?.scrollBy(-500, 0);
+		cards?.scrollBy(-1000, 0);
 	}
 
 	function scrollLeft() {
 		const cards = document.querySelector('#cards');
-		cards?.scrollBy(500, 0);
+		cards?.scrollBy(1000, 0);
 	}
 
 	return (
