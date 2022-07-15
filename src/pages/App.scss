@@ -1,5 +1,5 @@
 .home {
-	height: 100vh;
+	min-height: 100vh;
 	padding: 2rem;
 	display: flex;
 	flex-direction: column;
@@ -14,28 +14,35 @@
 
 .pokemon-container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	height: 50%;
-	gap: 1rem;
+	gap: 2rem;
+	padding: 0.5rem 3rem;
+	flex-wrap: wrap;
+	flex: 1;
+	transition: all 0.5s;
 
 	.pokemon {
-		width: 100%;
-		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
 		img {
-			width: 100%;
-			height: 100%;
+			height: auto;
+			max-height: 45vh;
+			max-width: 100%;
+			min-width: 350px;
 		}
 	}
 
 	.pokemon-stats {
 		background-color: blue;
 		height: auto;
-		flex: 1 0 50%;
+		flex: 1;
+		min-width: 430px;
 	}
 }
 
 .cards {
 	width: 100%;
-	height: 50%;
 }
